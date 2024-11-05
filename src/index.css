@@ -11,3 +11,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.chatContainer {
+  width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin: 20px;
+}
+
+.chatWindow {
+  height: 600px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.botMessage,
+.userMessage {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin: 5px 0;
+}
+
+.botMessage {
+  align-self: flex-start;
+  background-color: #116069;
+}
+
+.userMessage {
+  align-self: flex-end;
+  background-color: #27D8EB;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.messageText {
+  max-width: 70%;
+  font-size: 0.9em;
+  color: white;
+  line-height: 1.4;
+}
+
+/* Input and button styling */
+.input {
+  width: calc(100% - 60px);
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #116069;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.optionButton {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #116069;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
